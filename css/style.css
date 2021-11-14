@@ -1,0 +1,65 @@
+*{
+    margin:0 ;
+    padding: 0;
+}
+
+.ex{
+    right:13%;
+    top:2px;
+    border:none;
+}
+
+.inField button{
+    opacity: 0.6;
+    pointer-events: none;
+}
+.inField button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+/* #toDoContainer{
+    max-height: 250px;
+    margin: 50px ;
+    text-align: center;
+} */
+
+.toDoList{
+    max-height: 250px;
+    overflow-y : auto;
+    padding: 20px;
+    
+}
+.toDoList li{
+    list-style:none ;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    border-radius: 3px;
+    margin-bottom : 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+    background-color: rgb(162, 227, 247);
+    
+}
+.toDoList li span{
+    position:absolute;
+    right: -45PX ;
+    color: #fff;
+    width: 45px;
+    text-align: center;
+    background: #e74c3c;
+    border-radius: 0 3px 3px 0 ;
+    cursor: pointer;
+    height: 100%; 
+    transition: all 0.3s ease;
+    
+}
+.toDoList li span i{
+    position:absolute ;
+    top:14px;
+    right: 17px;
+}
+.toDoList li:hover span{
+    right: 0px;
+}
